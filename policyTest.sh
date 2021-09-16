@@ -28,7 +28,7 @@ ss -a -t -u -p | grep "ESTAB" | sed -r "s/\s+/    /g" # Get established connecti
 echo
 
 echo "### LISTENING PORTS ###"
-ss -l -t -u -p
+ss -l -t -u -p | sed -r "s/\s+/    /g"
 
 echo
 
