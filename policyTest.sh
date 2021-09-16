@@ -7,7 +7,7 @@
 #	Application server
 
 # Firewall services and ports
-expectedServices="dhcpv6 http ssh"
+expectedServices="dhcpv6-client http ssh"
 expectedPorts=""
 
 # Get network information
@@ -34,14 +34,14 @@ echo
 
 # Get firewalld restrictions
 echo "### FIREWALL RULES ###"
-services=$(firewall-cmd --list-all | grep "services" | -d ' ' -f4-)
+services=$(firewall-cmd --list-all | grep "services" | cut -d ' ' -f4-)
 echo "Firewalld services: $services"
-if [[ $services != $expectedServices ]] then
+if [[ $services != $expectedServices ]]; then
 	echo "!!Services do not match expected services: $expectedServices!!"
 fi
 
-ports=$(firewall-cmd --list-all | grep " ports" | -d ' ' -f4-)
+ports=$(firewall-cmd --list-all | grep " ports" | cut -d ' ' -f4-)
 echo "Firewalld ports: $ports"
-if [[ $ports != $expectedPorts ]] then
+if [[ $ports != $expectedPorts ]]; then
 	echo "!!Ports do not match expected ports: $expectedPorts!!"
 fi
