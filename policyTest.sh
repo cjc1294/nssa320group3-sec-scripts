@@ -45,5 +45,3 @@ echo "Firewalld ports: $ports"
 if [[ $ports != $expectedPorts ]] then
 	echo "!!Ports do not match expected ports: $expectedPorts!!"
 fi
-
-# Get information on installed packages
