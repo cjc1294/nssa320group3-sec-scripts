@@ -7,6 +7,13 @@
 #	Application server
 
 # Get network information
+echo "### NETWORK INFORMATION ###"
+ip a
+
+echo
+
+echo "### CONNECTIVITY TEST ###"
+ping google.com -c 2
 
 # Get open ports/established connections
 
