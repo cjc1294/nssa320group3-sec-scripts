@@ -5,6 +5,9 @@
 #	Test the application servers to make sure they conform to the security policies
 # Machines Affected:
 #	Application server
+# Usage:
+#	Simply run the script and check output versus assumptions
+#	Some sections, such as the firewall, will check automatically
 
 # Firewall services and ports
 expectedServices="dhcpv6-client http ssh"
