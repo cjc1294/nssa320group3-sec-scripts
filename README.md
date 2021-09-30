@@ -1,3 +1,3 @@
 # nssa320group3-sec-scripts
 
-A script to test if a server follows the policies outlined in our security document.
+Scripts to test functionality of machines in relation to the policies outlined by the security team
