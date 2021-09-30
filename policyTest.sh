@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Authors: Chris Cheney(cjc1294)
+# Authors: Chris Cheney(cjc1294), Hannah Gosselin(hrg5188)
 # Purpose:
 #	Test the application servers to make sure they conform to the security policies
 # Machines Affected:
