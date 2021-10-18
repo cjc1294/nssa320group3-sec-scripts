@@ -8,7 +8,7 @@
 #	Simply run the script. Siege will output running state and final statistics when completed
 
 siegeLength="1M"
-concurrentUsers="100"
-targetIp="192.168.1.104"
+concurrentUsers="300"
+targetIp="192.168.2.16"
 
 siege -t $siegeLength -c $concurrentUsers $targetIp | grep -v "HTTP/1.1"
